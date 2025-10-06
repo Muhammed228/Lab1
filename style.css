@@ -1,0 +1,89 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #cfd9df, #e2ebf0);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 450px;       /* форма стала шире */
+  margin: 80px auto;
+  background: #ffffff;
+  padding: 35px 40px;
+  
+  /* необычные углы */
+  border-radius: 40px 10px 40px 10px; /* диагональные скругления */
+  
+  box-shadow: 0 14px 30px rgba(0,0,0,0.15);
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.container:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.2);
+}
+
+h2 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 25px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccd3e0;
+  border-radius: 12px;
+  transition: all 0.3s;
+  background: #f9fbff;
+}
+
+input:focus {
+  border: 1px solid #4a90e2;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(74,144,226,0.35);
+  outline: none;
+}
+
+.error {
+  color: #e63946;
+  font-size: 13px;
+  margin-top: 3px;
+  display: block;
+}
+
+.btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #4a90e2, #357abd);
+  border: none;
+  border-radius: 14px;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #5aa3ff, #2460a8);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
